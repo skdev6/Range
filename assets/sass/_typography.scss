@@ -1,0 +1,68 @@
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    color: var(--text-color);
+    font-weight: bold;
+    font-family: var(--ff-heading);
+}
+h1 {
+    font-size: 72px;
+    line-height: 80px; 
+} 
+h2 {
+    font-size: 60px;
+    line-height: 75px;
+}
+h3 {
+    font-size: 32px;
+    line-height: 42px;
+}
+h4 {
+    font-size: 26px;
+    line-height: 1.6em; 
+}
+h5 {
+    font-size: 20px;
+    line-height: 1.6em;
+}
+h6 {
+    font-size: 18px;
+    line-height: 30px;
+}
+.xl-title{
+    font-size: 72px;
+    line-height: 85px;
+}
+.lg-title{
+    font-size: 60px;
+    line-height: 70px;
+}
+.md-title{
+    font-size: 32px;
+    line-height: 48px;
+}
+.sm-title{
+    font-size: 14px;
+    line-height: 24px;
+}
+.font-w400{
+    font-weight:400;
+}
+.font-w500{
+    font-weight:500;
+}
+.font-w600{
+    font-weight:600;
+}
+.font-w700{
+    font-weight:700;
+}
+.font-w800{
+    font-weight:800;
+}
+.font-w900{
+    font-weight:900;
+}

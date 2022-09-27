@@ -1,0 +1,115 @@
+.hero-area{
+	position: relative;
+	width: 100%;
+	min-height: calc(100vh - 60px);
+	overflow: hidden; 
+	@media #{$lg_device}{
+		padding-top: 80px; 
+		padding-left: 10vw; 
+		padding-right: 10vw;
+	}
+	@media #{$sm_device}{
+		padding-left: 0;
+		padding-right: 0; 
+	}
+	.nav__item{
+		@media #{$min_lg}{
+			position: absolute;
+			bottom: 0; 
+			width:30vw;  
+			height: auto;	
+		} 
+		@media #{$lg_device}{
+			width: 280px;
+			position: relative;
+		}
+		@media #{$sm_device}{ 
+			width: 64.87179487179488vw;
+			margin-bottom: -8.205128205128204vw;
+		}
+		.link-item{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%; 
+			z-index: 15; 
+		}
+		.title{
+			position: absolute;
+			z-index: 10;
+			color: #fff;
+			bottom: 6.458333333333333vw;
+			left: 4.791666666666667vw; 
+			font-size: 3.0729166666666665vw;
+			line-height: 2.8125vw;
+			font-family: 'Tiempos Text';
+			@media #{$lg_device}{
+				font-size: 32px;
+				line-height: 27px; 
+			}
+			@media #{$sm_device}{
+				font-size: 7.6923076923076925vw;
+				line-height: 7.6923076923076925vw; 
+			} 
+			span{
+				display: inline-block;vertical-align: text-top; 
+			}
+			.word-parent{
+				overflow: hidden; 
+				display: block; 
+			}
+		}
+		svg{
+			width: 100%;
+			height: auto; 
+
+		}
+	}
+	@media #{$min_lg}{ 
+		.business-law{
+			left: 29.6875vw;
+			top: 0;
+			bottom: auto;
+		}
+		.range-university{
+			left: auto;
+			right: 0; 
+		}
+		.nav__item.employment-law{
+			bottom:40px; 
+		}
+		.nav__item.business-law{
+			.title{
+				left: 14.7916666667vw;
+				bottom: 9.7916666667vw;
+			}
+		}
+	}
+	@media #{$lg_device}{
+		.nav__item.employment-law{ 
+			.title{
+				top: 123px;
+				bottom: auto;
+				left: 32px;
+			}
+		}
+		.nav__item.business-law{
+			margin-left: auto; 
+			.title{
+				top: 116px;
+				bottom: auto;
+				left: 109px;
+			}
+		}
+		.nav__item.range-university{
+			margin-left: auto; 
+			padding-bottom: 70px; 
+			.title{
+				top: 167px;
+				bottom: auto;
+				left: 56px;
+			}
+		}
+	}
+}

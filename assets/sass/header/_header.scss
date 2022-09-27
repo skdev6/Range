@@ -1,0 +1,27 @@
+.header-logo{
+	position: absolute;
+	left: 3.6458333333333335vw;
+	top: 58px; 
+	z-index: 999;
+	@media #{$lg_device}{
+		top: 9px;
+		left: 24px;
+		svg{
+			width: 165px; 
+		}
+		&::before { 
+			content: "";
+			height: 263px;
+			width: 235px;
+			left: -134px;
+			top: -126px;
+			background: -moz-linear-gradient(left, #e9e9f1 0%, #e9e9f1 50%, rgba(233, 233, 241, 0) 100%);
+			background: -webkit-linear-gradient(left, #e9e9f1 0%, #e9e9f1 50%, rgba(233, 233, 241, 0) 100%);
+			background: linear-gradient(to right, #e9e9f1 0%, #e9e9f1 80%, rgba(233, 233, 241, 0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e9e9f1", endColorstr="#00e9e9f1",GradientType=1 );
+			position: absolute;
+			z-index: -2;
+			transform: rotate(45deg);
+		}
+	}
+} 

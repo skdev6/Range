@@ -1,0 +1,214 @@
+.page-section-item{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	padding-left: 10vw; 
+	padding-top: 12vw;  
+	padding-right: 18vw;
+	z-index: 150;
+	overflow-y: auto;
+	display: none; 
+	@media #{$lg_device}{
+		padding: 0; 
+		.page-content-wrap{
+			padding-top: 80vw;
+			padding-left: 0;
+			padding-right: 0; 
+			padding-bottom: 90px;
+		}
+	}
+	.light-text-box{
+		background-color: #E9E9F1;
+		font-size: 18px;
+		line-height: 22px;
+		border-radius:10px; 
+		padding-right: 3vw;
+		padding-left: 15vw;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@media #{$lg_device}{
+			padding:30px 35px; 
+			border-radius: 0;
+		}
+		p{
+			margin-bottom: 20px;
+			&:last-child{
+				margin-bottom: 0; 
+			}
+		}
+	} 
+	.sm-box.light-text-box{
+		padding-top: 20px;
+		padding-bottom: 20px; 
+	}
+	.links-card{
+		@media #{$min_lg}{
+			position: absolute;
+			right: 30px;
+			bottom: 60px;
+		} 
+	}
+}
+.highlight-buttons{
+	margin-top: 37px;
+	margin-bottom: 18px;
+	@media #{$lg_device}{
+		padding-left: 10vw;
+		padding-right: 10vw; 
+	}
+}
+.highlight-text{
+	color: #fff; 
+	font-size: 31px;
+	line-height: 36px;
+	position: relative;
+	padding-left: 70px; 
+	padding-top: 5px; 
+	margin-bottom: 20px;
+	display: block;
+	text-decoration: none; 
+	.icon{
+		position: absolute;
+		display: block;
+		left: 0;
+		top: calc(50% - 2px);
+		transition: all 0.25s; 
+		transform: translateY(-50%);
+	}
+	&:hover{
+		color: #653B1E;
+		.icon{
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+}
+.text-loog-wrap{
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	width: 100%; 
+	margin-top: 30px; 
+	padding: 10px 0; 
+	p{
+		white-space: nowrap;
+		font-size: 45px;
+		line-height: 41px;
+		color: #E9E9F1; 
+		margin-bottom: 0;
+		margin-left: 10px;
+	}
+}
+.links-card{ 
+padding: 1.25vw;
+		background-color:#653B1E;
+		border-radius:10px; 
+		@media #{$lg_device}{
+			padding:20px; 
+			margin-left: 10vw;
+			margin-right: 10vw;
+			margin-top: 15px; 
+		}
+	.title{
+		font-size: 18px;
+		line-height: 22px;
+		color: #F49B26;
+		margin-bottom: 20px;
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		list-style:none;  
+		li,a{
+			color: #E9E9F1;font-size: 1.0416666666666667vw;line-height: 1.0416666666666667vw;
+			text-decoration: none;
+			display: block;
+			@media #{$lg_device}{
+				font-size: 28px;
+				line-height: 22px; 
+			}
+		} 
+		li{
+			position: relative;
+			margin-bottom: 15px;
+			padding-left: 32px; 
+			&:last-child{
+				margin-bottom: 0; 
+			}
+			&::before{
+				content: "";
+				position: absolute;
+				left: 0;
+				height: 19px;
+				width: 19px;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Ccircle id='Ellipse_1' data-name='Ellipse 1' cx='26' cy='26' r='26' fill='%23e9e9f1'/%3E%3Cpath id='Path_1749' data-name='Path 1749' d='M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z' transform='translate(-360.754 -633.751)' fill='%23eea539'/%3E%3C/svg%3E");
+				background-size: contain;
+				transition: all 0.25s;  
+				top:-4px; 
+			}
+		}
+		li{
+			&:hover{
+				&::before{ 
+					transform: rotate(180deg);
+				}
+				a{
+					color: #F49B26;
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+.footer-area{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #c7c6c5;
+	background: -moz-linear-gradient(left,  #c7c6c5 0%, #9f9f9f 100%);
+	background: -webkit-linear-gradient(left,  #c7c6c5 0%,#9f9f9f 100%);
+	background: linear-gradient(to right,  #c7c6c5 0%,#9f9f9f 100%);
+	font-size: 24px;
+	line-height: 21px;
+	color: #696A6A;
+	z-index: 2000; 
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	.separate{
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px; 
+	}
+	@media #{$lg_device}{
+		text-align: center; 
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+} 
+
+.form-control{
+	padding:13px 25px; 
+}
+#page-Range-University{
+	.highlight-text{
+		&:hover{
+			color:#B7A581;
+		}
+	} 
+}
+#page-Employment-Law{
+	.highlight-text{
+		&:hover{
+			color:#8A8DB3;
+		}
+	} 
+}

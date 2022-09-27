@@ -1,0 +1,568 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Range</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Place favicon.ico in the root directory -->
+  <!-- Global Css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="page-root">
+    <!-- Logo -->
+    <a href="#" class="logo header-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="248.737" height="85.046" viewBox="0 0 248.737 85.046">
+      <path data-name="Path 1" d="M90.839,110.2c-1.26-1.785-2.2-6.615-2.73-14.385-.42-7.349-3.885-12.284-12.915-12.284H56.505V110.2H47.581V44.056H74.459c16.8,0,24.884,7.769,24.884,19.529,0,10.184-6.929,15.539-15.014,16.484,8.085,1.575,11.969,6.51,12.6,14.28.84,9.659,1.155,13.439,3.36,15.854Zm-16.9-33.914c11.235,0,16.275-4.2,16.275-12.389,0-7.56-5.04-12.39-16.275-12.39H56.505V76.289Z" transform="translate(-47.581 -44.056)" fill="#7c7d7d"/>
+      <path class="logo-item" data-name="Path 2" d="M144.283,101.173a3.213,3.213,0,0,0,3.57,3.57,8.712,8.712,0,0,0,3.989-1.05v4.725a8.948,8.948,0,0,1-7.035,2.73c-4.724,0-8.084-3.57-8.609-9.03-2.52,5.355-9.03,9.345-16.484,9.345-8.925,0-14.7-4.83-14.7-12.7,0-8.714,7.455-12.284,18.479-14.489l12.39-2.52V79.964c0-6.3-3.675-10.185-10.079-10.185-6.615,0-10.185,3.885-11.55,9.24l-7.77-1.05c1.785-8.61,8.61-14.909,19.424-14.909,11.55,0,18.375,5.879,18.375,17.534Zm-8.4-13.649-10.29,2.2c-7.244,1.575-11.864,2.94-11.864,8.5,0,3.885,2.625,6.825,7.874,6.825,8.085,0,14.28-6.09,14.28-15.329Z" transform="translate(-47.581 -44.056)" fill="#7c7d7d"/>
+      <path class="logo-item" data-name="Path 3" d="M165.283,110.2h-8.715V64.32h8.715v8.189c2.205-5.564,8.4-9.449,15.224-9.449,11.97,0,16.8,7.979,16.8,18.689V110.2h-8.714V82.484c0-7.665-3.675-12.5-10.92-12.5-6.929,0-12.389,5.46-12.389,13.86Z" transform="translate(-47.581 -44.056)" fill="#7c7d7d"/>
+      <path class="logo-item" data-name="Path 4" d="M224.815,94.243a25.022,25.022,0,0,1-10.08-1.889c-1.575.945-3.045,2.415-3.045,4.514,0,2.52,1.575,3.99,5.565,3.99h17.954c9.975,0,15.225,5.25,15.225,12.39,0,11.444-12.81,15.854-26.459,15.854-12.39,0-22.679-3.885-22.679-12.39,0-5.249,3.779-8.609,9.449-9.659-4.2-1.365-6.09-4.41-6.09-7.875,0-3.989,2.836-6.824,6.93-8.609A14.157,14.157,0,0,1,205.6,78.7c0-9.659,7.979-15.644,19.214-15.644,5.775,0,10.919,1.785,14.384,4.724a14.028,14.028,0,0,1,11.655-6.3v7.56a21.325,21.325,0,0,0-8.82,1.89,14.629,14.629,0,0,1,2.205,7.769C244.239,88.259,236.154,94.243,224.815,94.243Zm-.84,29.084c10.5,0,18.059-2.52,18.059-9.134,0-4.2-3.465-5.67-8.82-5.67h-14.8c-4.725,0-8.82,1.575-8.82,6.51C209.59,120.807,215.47,123.327,223.975,123.327Zm.945-54.6c-6.4,0-10.4,3.569-10.4,10.079,0,6.3,3.99,9.87,10.4,9.87,6.509,0,10.5-3.57,10.5-9.87C235.419,72.3,231.429,68.73,224.92,68.73Z" transform="translate(-47.581 -44.056)" fill="#7c7d7d"/>
+      <path class="logo-item" data-name="Path 5" d="M296.108,94.769c-2.31,10.394-9.975,16.694-21.42,16.694-13.649,0-23.624-9.24-23.624-23.519,0-14.49,9.975-24.884,23.2-24.884,14.6,0,22.05,10.394,22.05,22.889v3.465H259.779c.42,8.924,6.825,15.224,15.015,15.224,7.664,0,12.179-3.675,14.069-10.71Zm-8.715-11.025c-.315-7.35-4.41-14.07-13.125-14.07-8.294,0-13.229,6.51-14.279,14.07Z" transform="translate(-47.581 -44.056)" fill="#7c7d7d"/>
+      <path class="logo-line" data-name="Path 2134" d="M.475,0H36" transform="translate(54.5 75.023)" fill="none" stroke="#7c7d7d" stroke-width="7"/>
+    </svg>
+    </a>
+    <section class="hero-area">
+      <!-- Nav Item -->
+      <div class="nav__item business-law"> 
+        <div class="content-wrapper">
+          <a href="#page-Business-Law" class="link-item"></a>
+          <div class="earth-wrapper" data-path="">
+
+          </div>
+          <h2 class="title">
+            <span class="word-parent">
+              <span class="word">Business</span>
+            </span>
+            <span class="word-parent">
+              <span class="word">Law</span>
+            </span>
+          </h2>
+        </div>
+      </div>
+      <!-- Nav Item -->
+      <div class="nav__item employment-law">
+        <div class="content-wrapper">
+          <a href="#page-Employment-Law" class="link-item"></a>
+          <div class="earth-wrapper" data-path="">
+            
+          </div>
+          <h2 class="title">
+            <span class="word-parent">
+              <span class="word">Employment</span>
+            </span>
+            <span class="word-parent">
+              <span class="word">Law</span>
+            </span>
+          </h2>
+        </div>
+      </div>
+      <!-- Nav Item -->
+      <div class="nav__item range-university">
+        <div class="content-wrapper">
+          <a href="#page-Range-University" class="link-item"></a>
+          <div class="earth-wrapper" data-path="">
+            
+          </div>
+          <h2 class="title">
+            <span class="word-parent">
+              <span class="word">Range</span>
+            </span>
+            <span class="word-parent">
+              <span class="word">University</span>
+            </span>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="page-Employment-Law" class="page-section-item"> 
+      <div class="page-content-wrap">
+        <div class="light-text-box fadeUpDown">
+          <p>At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses.</p>
+          <p>We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</p>
+          <p>We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+        </div>
+        <div class="highlight-buttons">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="row">
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#" class="highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#042D87"/>
+                      </svg>
+                    </span>
+                    Policies
+                  </a>
+                </div>
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#Legal-Action" class="open-popup highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#042D87"/>
+                      </svg>
+                    </span>
+                    Legal Action
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+        <div class="light-text-box sm-box fadeUpDown">
+          <p>ADDITIONAL AREAS OF EMPLOYMENT LAW WE DO:</p>
+        </div>
+        <div class="text-loog-wrap fadeUpDown">
+          <p>HR Advice, Legal Action, Policies, Training, Compliance / Risk Management, Performance Management, Labor Relations / Farm Labor</p>
+        </div>
+      </div>
+    </section>
+    <section id="page-Business-Law" class="page-section-item"> 
+      <div class="page-content-wrap">
+        <div class="light-text-box fadeUpDown">
+          <p>At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses.</p>
+          <p>We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</p>
+          <p>We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+        </div>
+        <div class="highlight-buttons">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="row">
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#Formation" class="open-popup highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#eea539"/>
+                      </svg>
+                    </span>
+                    Formation
+                  </a>
+                </div>
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#Crisis-Mitigation" class="open-popup highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#eea539"/>
+                      </svg>
+                    </span>
+                    Crisis Mitigation
+                  </a>
+                </div>
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#Board-Ownership-Equity" class="open-popup highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#eea539"/>
+                      </svg>
+                    </span>
+                    Board & Ownership Equity
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+        <div class="light-text-box sm-box fadeUpDown">
+          <p>ADDITIONAL AREAS OF BUSINESS LAW WE DO:</p>
+        </div>
+        <div class="text-loog-wrap fadeUpDown">
+          <p>Contracts, Outside General Counsel, Negotiation, Litigation, Intellectual Property, Mergers & Acquisitions, Contracts, Outside General Counsel, Negotiation, Litigation, Intellectual Property, Mergers & Acquisitions</p>
+        </div>
+        <div class="links-card fadeUpDown">
+          <h4 class="title">RESOURCES:</h4>
+          <ul class="links">
+            <li><a href="#Valuation" class="open-popup">Valuation</a></li>
+            <li><a href="#Accounting-Tax" class="open-popup">Accounting / Tax</a></li>
+            <li><a href="#Investment-Banking" class="open-popup">Investment Banking</a></li>
+            <li><a href="#Communications" class="open-popup">Communications</a></li>
+          </ul>
+        </div>
+      </div>
+    </section> 
+    <section id="page-Range-University" class="page-section-item"> 
+      <div class="page-content-wrap">
+        <div class="light-text-box fadeUpDown">
+          <p>At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses.</p>
+        </div>
+        <div class="highlight-buttons">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="row">
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#Business-Law-Documentation" class="open-popup highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#293C1D"/>
+                      </svg>
+                    </span>
+                    Business Law Documentation
+                  </a>
+                </div>
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#" class="highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#293C1D"/>
+                      </svg>
+                    </span>
+                    Employment Law Documentation
+                  </a>
+                </div>
+                <!-- TEXT ITEM -->
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#" class="highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#293C1D"/>
+                      </svg>
+                    </span>
+                    New Legislation / Regulation
+                  </a>
+                </div>
+                <!-- TEXT ITEM --> 
+                <div class="col-lg-4 fadeUpDown d-flex align-items-center">
+                  <a href="#" class="highlight-text">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="26" r="26" fill="#e9e9f1"/>
+                        <path id="Path_1749" data-name="Path 1749" d="M375.1,654.267l9.4,3.3V647.353h4.665V657.48l9.564-3.294,1.449,4.422-9.646,3.053,6.028,8.12-3.779,2.733-5.867-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.649-3.136Z" transform="translate(-360.754 -633.751)" fill="#293C1D"/>
+                      </svg>
+                    </span>
+                    Urgent Issues / Breaking News
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>    
+        </div>
+      </div>
+    </section>
+    <footer class="footer-area">
+      <div class="left-area">
+        <a href="#About-Us" class="open-inner-content">About Us</a>
+        <span class="separate">/</span>
+        <a href="#Lawyer-Up" class="open-inner-content">Lawyer Up</a>
+      </div>
+    </footer> 
+  </main> 
+  <!-- Board-Ownership-Equity POPUP ITEM -->
+  <div id="Board-Ownership-Equity" class="popup-item">
+    <div class="popup-wrapper">
+      <button class="btn__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15.253" height="15.253" viewBox="0 0 15.253 15.253">
+          <path id="Path_2134" data-name="Path 2134" d="M7.627,10.256l-5,5L0,12.623l5-5-5-5L2.63,0l5,5,5-5,2.63,2.63-5,5,5,5-2.63,2.63Z" fill="#3b1e14"/>
+        </svg>
+      </button>   
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="51.508" height="51.508" viewBox="0 0 51.508 51.508">
+        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="25.754" cy="25.754" rx="25.754" ry="25.754" transform="translate(51.508 51.508) rotate(180)" fill="#e9e9f1"/>
+        <path id="Path_1751" data-name="Path 1751" d="M857.676,654.267l9.406,3.3V647.353h4.664v10.127l9.565-3.294,1.448,4.422-9.646,3.053,6.028,8.12-3.778,2.733-5.868-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.65-3.136Z" transform="translate(894.833 685.68) rotate(180)" fill="#eea539"/>
+      </svg>
+      <div class="body-content">
+        <div class="px-lg-0 px-3">
+          <h2 class="popup-title fadeUp">
+              Board & Ownership Equity
+          </h2>
+        </div>
+        <div class="px-0 px-lg-5 mb-3 mb-lg-5 fadeUp"><img src="assets/img/Video.jpg" alt="" class="w-100"></div>
+        <div class="px-lg-0 px-3"> 
+          <div class="row">
+            <div class="col-lg-8 mx-auto fadeUp">
+              <p>At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses.</p>
+              <p>We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</p>
+              <p>We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!-- Valuation POPUP ITEM -->
+  <div id="Valuation" class="popup-item">
+    <div class="popup-wrapper">
+      <button class="btn__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15.253" height="15.253" viewBox="0 0 15.253 15.253">
+          <path id="Path_2134" data-name="Path 2134" d="M7.627,10.256l-5,5L0,12.623l5-5-5-5L2.63,0l5,5,5-5,2.63,2.63-5,5,5,5-2.63,2.63Z" fill="#3b1e14"/>
+        </svg>
+      </button>   
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="51.508" height="51.508" viewBox="0 0 51.508 51.508">
+        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="25.754" cy="25.754" rx="25.754" ry="25.754" transform="translate(51.508 51.508) rotate(180)" fill="#e9e9f1"/>
+        <path id="Path_1751" data-name="Path 1751" d="M857.676,654.267l9.406,3.3V647.353h4.664v10.127l9.565-3.294,1.448,4.422-9.646,3.053,6.028,8.12-3.778,2.733-5.868-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.65-3.136Z" transform="translate(894.833 685.68) rotate(180)" fill="#eea539"/>
+      </svg>
+      <div class="body-content px-lg-0 px-3">
+        <h2 class="popup-title">
+            Valuation
+        </h2>
+        <div class="row px-4 pt-lg-5 pt-3">
+          <div class="col-lg-8 mx-auto">
+            <p>At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses.</p>
+            <p>We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</p>
+            <p>Valuation is the analytical process of determining the current (or projected) worth of an asset or a company. There are many techniques used for doing a valuation. An analyst placing a value on a company looks at the business’s management, the composition of its capital structure, the prospect of future earnings, and the market value of its assets, among other metrics.</p>
+            <p>Fundamental analysis is often employed in valuation, although several other methods may be employed such as the capital asset pricing model (CAPM) or the dividend discount model (DDM). At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses. We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill. We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+            <p>Valuation is the analytical process of determining the current (or projected) worth of an asset or a company. There are many techniques used for doing a valuation. An analyst placing a value on a company looks at the business’s management, the composition of its capital structure, the prospect of future earnings, and the market value of its assets, among other metrics.</p>
+            <p>Fundamental analysis is often employed in valuation, although several other methods may be employed such as the capital asset pricing model (CAPM) or the dividend discount model (DDM).</p>
+          </div>
+        </div>
+          <div class="links-card position-abs fadeUpDown">
+            <h4 class="title">DOWNLOAD:</h4>
+            <ul class="links">
+              <li><a href="#">VALUATION.PDF</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>  
+  </div>
+  <!-- Legal Action POPUP ITEM -->
+  <div id="Legal-Action" class="popup-item">
+    <div class="popup-wrapper">
+      <button class="btn__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15.253" height="15.253" viewBox="0 0 15.253 15.253">
+          <path id="Path_2134" data-name="Path 2134" d="M7.627,10.256l-5,5L0,12.623l5-5-5-5L2.63,0l5,5,5-5,2.63,2.63-5,5,5,5-2.63,2.63Z" fill="#3b1e14"/>
+        </svg>
+      </button>   
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="51.508" height="51.508" viewBox="0 0 51.508 51.508">
+        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="25.754" cy="25.754" rx="25.754" ry="25.754" transform="translate(51.508 51.508) rotate(180)" fill="#e9e9f1"/>
+        <path id="Path_1751" data-name="Path 1751" d="M857.676,654.267l9.406,3.3V647.353h4.664v10.127l9.565-3.294,1.448,4.422-9.646,3.053,6.028,8.12-3.778,2.733-5.868-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.65-3.136Z" transform="translate(894.833 685.68) rotate(180)" fill="#042D87"/>
+      </svg>
+      <div class="body-content px-lg-0 px-3">
+        <h2 class="popup-title">
+            Legal Action
+        </h2>
+        <div class="row px-4 pt-lg-5 pt-3">
+          <div class="col-lg-8 mx-auto">
+            <p>At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses.</p>
+            <p>We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</p>
+            <p>We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+            <p>Valuation is the analytical process of determining the current (or projected) worth of an asset or a company. There are many techniques used for doing a valuation. An analyst placing a value on a company looks at the business’s management, the composition of its capital structure, the prospect of future earnings, and the market value of its assets, among other metrics.</p>
+            <p>Fundamental analysis is often employed in valuation, although several other methods may be employed such as the capital asset pricing model (CAPM) or the dividend discount model (DDM). At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses. We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill. We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+            <p>Valuation is the analytical process of determining the current (or projected) worth of an asset or a company. There are many techniques used for doing a valuation. An analyst placing a value on a company looks at the business’s management, the composition of its capital structure, the prospect of future earnings, and the market value of its assets, among other metrics.</p>
+            <p>Fundamental analysis is often employed in valuation, although several other methods may be employed such as the capital asset pricing model (CAPM) or the dividend discount model (DDM).</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!-- Business Law Documentation POPUP ITEM -->
+  <div id="Business-Law-Documentation" class="popup-item">
+    <div class="popup-wrapper">
+      <button class="btn__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15.253" height="15.253" viewBox="0 0 15.253 15.253">
+          <path id="Path_2134" data-name="Path 2134" d="M7.627,10.256l-5,5L0,12.623l5-5-5-5L2.63,0l5,5,5-5,2.63,2.63-5,5,5,5-2.63,2.63Z" fill="#3b1e14"/>
+        </svg>
+      </button>   
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="51.508" height="51.508" viewBox="0 0 51.508 51.508">
+        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="25.754" cy="25.754" rx="25.754" ry="25.754" transform="translate(51.508 51.508) rotate(180)" fill="#e9e9f1"/>
+        <path id="Path_1751" data-name="Path 1751" d="M857.676,654.267l9.406,3.3V647.353h4.664v10.127l9.565-3.294,1.448,4.422-9.646,3.053,6.028,8.12-3.778,2.733-5.868-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.65-3.136Z" transform="translate(894.833 685.68) rotate(180)" fill="#4D5B31"/>
+      </svg>
+      <div class="body-content px-lg-0 px-3">
+        <h2 class="popup-title">
+            Business Law Documentation
+        </h2>
+        <div class="row px-4 pt-lg-5 pt-3">
+          <div class="col-lg-8 mx-auto">
+            <ul class="text-links-wrap">
+              <li class="fadeUp"><a href="#child-popup-link-1" class="open-child-popup">New rules around Board and Ownership Equity 9-15-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-2" class="open-child-popup">ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-3" class="open-child-popup">New rules around Business Formation 10-1-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-4" class="open-child-popup">New rules around Board and Ownership Equity 9-15-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-5" class="open-child-popup">ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-6" class="open-child-popup">New rules around Business Formation 10-1-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-7" class="open-child-popup">New rules around Board and Ownership Equity 9-15-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-8" class="open-child-popup">ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-9" class="open-child-popup">New rules around Business Formation 10-1-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-11" class="open-child-popup">New rules around Board and Ownership Equity 9-15-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-12" class="open-child-popup">ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-13" class="open-child-popup">New rules around Business Formation 10-1-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-14" class="open-child-popup">New rules around Board and Ownership Equity 9-15-22</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-15" class="open-child-popup">ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</a></li>
+              <li class="fadeUp"><a href="#child-popup-link-16" class="open-child-popup">New rules around Business Formation 10-1-22</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!-- Business Law Documentation CHILD POPUP ITEM -->
+  <div id="child-popup-link-1" class="popup-item">
+    <div class="popup-wrapper">
+      <button class="btn__close_clild">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15.253" height="15.253" viewBox="0 0 15.253 15.253">
+          <path id="Path_2134" data-name="Path 2134" d="M7.627,10.256l-5,5L0,12.623l5-5-5-5L2.63,0l5,5,5-5,2.63,2.63-5,5,5,5-2.63,2.63Z" fill="#3b1e14"/>
+        </svg>
+      </button>   
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="51.508" height="51.508" viewBox="0 0 51.508 51.508">
+        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="25.754" cy="25.754" rx="25.754" ry="25.754" transform="translate(51.508 51.508) rotate(180)" fill="#e9e9f1"/>
+        <path id="Path_1751" data-name="Path 1751" d="M857.676,654.267l9.406,3.3V647.353h4.664v10.127l9.565-3.294,1.448,4.422-9.646,3.053,6.028,8.12-3.778,2.733-5.868-8.038-5.868,8.2-3.7-2.9,5.871-7.959-9.65-3.136Z" transform="translate(894.833 685.68) rotate(180)" fill="#4D5B31"/>
+      </svg>
+      <div class="body-content px-lg-0 px-3">
+        <h2 class="popup-title">
+            New rules around Board & Ownership Equity 
+        </h2>
+        <div class="row px-4 pt-lg-5 pt-3">
+          <div class="col-lg-8 mx-auto">
+            <p>At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses.</p>
+            <p>We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill.</p>
+            <p>We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+            <p>Valuation is the analytical process of determining the current (or projected) worth of an asset or a company. There are many techniques used for doing a valuation. An analyst placing a value on a company looks at the business’s management, the composition of its capital structure, the prospect of future earnings, and the market value of its assets, among other metrics.</p>
+            <p>Fundamental analysis is often employed in valuation, although several other methods may be employed such as the capital asset pricing model (CAPM) or the dividend discount model (DDM). At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses. We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill. We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+            <p>Valuation is the analytical process of determining the current (or projected) worth of an asset or a company. There are many techniques used for doing a valuation. An analyst placing a value on a company looks at the business’s management, the composition of its capital structure, the prospect of future earnings, and the market value of its assets, among other metrics.</p>
+            <p>Fundamental analysis is often employed in valuation, although several other methods may be employed such as the capital asset pricing model (CAPM) or the dividend discount model (DDM)</p>
+            <p>Fundamental analysis is often employed in valuation, although several other methods may be employed such as the capital asset pricing model (CAPM) or the dividend discount model (DDM). At Range, we pursue LAW AND POLICY with the same creative thinking and personal investment that our clients bring to building their businesses. We ADVOCATE TO ADVANCE their ambitions – in courtrooms, around conference tables, and on capitol hill. We distill CLARITY FROM COMPLEXITY, and measure our success not just in problems solved, but in lasting relationships that grow from positive outcomes.</p>
+            <p>Valuation is the analytical process of determining the current (or projected) worth of an asset or a company. There are many techniques used for doing a valuation. An analyst placing a value on a company looks at the business’s management, the composition of its capital structure, the prospect of future earnings, and the market value of its assets, among other metrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!-- ABOUT US -->
+  <div id="About-Us" class="inner-content-popup">
+    <div class="popup-wrapper">
+      <button class="btn__close_inner_popup">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16.667" height="16.667" viewBox="0 0 16.667 16.667">
+          <path id="Path_2135" data-name="Path 2135" d="M7.627,10.256l-5,5L0,12.623l5-5-5-5L2.63,0l5,5,5-5,2.63,2.63-5,5,5,5-2.63,2.63Z" transform="translate(0.707 0.707)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+        </svg>
+      </button>
+      <div class="body-content pb-5 px-lg-0 px-3">
+        <div class="container">
+          <h2 class="popup-title mb-3 mb-lg-4 fadeUp">
+              About Us
+          </h2>
+          <p class="mb-3 mb-lg-4 fadeUp"> 
+            Range /’rānj/: <br> 
+            1.N.  The scope of a person’s knowledge or abilities  2.N.  The direction or position in which something lies  3.N.  Cover or embrace a wide number of different topics <br>
+            4.V.  The compass of a person’s voice or musical instrument  5.N.  A large area of open land for grazing
+          </p>
+          <div class="row col-5-row">
+            <!-- CARD ITEM -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 fadeUp">
+              <div class="team-card">
+                <img src="assets/img/1.jpg" alt="" class="thumb">
+                <h2 class="card-title">David Bashford</h2>
+                <p class="info">davidbashford@range.law <br>+1 (303) 376-3713</p>
+              </div>
+            </div>
+            <!-- CARD ITEM -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 fadeUp">
+              <div class="team-card">
+                <img src="assets/img/2.jpg" alt="" class="thumb">
+                <h2 class="card-title">Cynthia Coleman</h2>
+                <p class="info">davidbashford@range.law <br>+1 (303) 376-3713</p>
+              </div>
+            </div>
+            <!-- CARD ITEM -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 fadeUp">
+              <div class="team-card">
+                <img src="assets/img/3.jpg" alt="" class="thumb">
+                <h2 class="card-title">Cindy Hurney</h2>
+                <p class="info">davidbashford@range.law <br>+1 (303) 376-3713</p>
+              </div>
+            </div>
+            <!-- CARD ITEM -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 fadeUp">
+              <div class="team-card">
+                <img src="assets/img/4.jpg" alt="" class="thumb">
+                <h2 class="card-title">Amy Knight</h2>
+                <p class="info">davidbashford@range.law <br>+1 (303) 376-3713</p>
+              </div>
+            </div>
+            <!-- CARD ITEM -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 fadeUp">
+              <div class="team-card">
+                <img src="assets/img/5.jpg" alt="" class="thumb"> 
+                <h2 class="card-title">Kevin Paul</h2>
+                <p class="info">davidbashford@range.law <br>+1 (303) 376-3713</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>    
+    </div>  
+  </div>
+  <!-- Lawyer Up -->
+  <div id="Lawyer-Up" class="inner-content-popup">
+    <div class="popup-wrapper">
+      <button class="btn__close_inner_popup">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16.667" height="16.667" viewBox="0 0 16.667 16.667">
+          <path id="Path_2135" data-name="Path 2135" d="M7.627,10.256l-5,5L0,12.623l5-5-5-5L2.63,0l5,5,5-5,2.63,2.63-5,5,5,5-2.63,2.63Z" transform="translate(0.707 0.707)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+        </svg>
+      </button>
+      <div class="body-content pb-5 px-lg-0 px-3">
+        <div class="container">
+          <h2 class="popup-title mb-3 mb-lg-4 fadeUp">
+              Lawyer Up
+          </h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <p class="mb-3 mb-lg-4 fadeUp"> 
+                Give us a call <br>
+                +1 (303) 595-4747
+              </p>
+              <p class="mb-3 mb-lg-4 fadeUp"> 
+                Send us an email <br>
+                info@range.law
+              </p>
+              <p class="mb-3 mb-lg-4 fadeUp"> 
+               Drop by <br>
+               600 Grant St. #650 <br>Denver, CO 80203
+              </p>
+            </div>
+            <div class="col-lg-8 fadeUp">
+              <div class="col-lg-8 ms-auto">
+                <form action="" class="contact-form">
+                  <div class="row">
+                    <!-- FORM ITEM -->
+                    <div class="col-lg-12 mb-3">
+                      <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <!-- FORM ITEM -->
+                    <div class="col-lg-12 mb-3">
+                      <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <!-- FORM ITEM -->
+                    <div class="col-lg-6 mb-3">
+                      <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                    <!-- FORM ITEM -->
+                    <div class="col-lg-6 mb-3">
+                      <input type="text" class="form-control" placeholder="City">
+                    </div>
+                     <!-- FORM ITEM -->
+                    <div class="col-lg-12 mb-3">
+                      <textarea placeholder="Message" class="form-control"></textarea>
+                    </div>
+                    <div class="col-lg-12">
+                      <button class="btn btn-dark btn-lg">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>    
+        </div>  
+      </div>    
+    </div>  
+  </div>
+  <div class="popup-backdrop"></div>
+  <!-- GLOBAL JAVASCRI -->
+  <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/lottie.min.js"></script>
+  <script src="assets/js/"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

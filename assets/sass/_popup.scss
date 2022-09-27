@@ -1,0 +1,149 @@
+.popup-backdrop{
+	position: fixed;left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1100;
+	backdrop-filter:blur(3px); 
+	opacity: 0;
+	visibility: hidden; 
+}
+.popup-item,.inner-content-popup{
+	position: fixed;
+	left: 0; 
+	top: 0;
+	width: 100%; 
+	z-index: 1200; 
+	height:calc(100vh - 60px); 
+	overflow-y: auto;
+	overflow-x: hidden; 
+	padding-top: 205px;  
+	padding-left: 15px;
+	padding-right: 15px; 
+	display: none;
+	@media #{$lg_device}{
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 291px; 
+	}
+	.popup-wrapper{
+		background-color: #E9E9F1;
+		border-radius:20px; 
+		position: relative; 
+		max-width: 60.3vw;  
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px; 
+		min-height: 100%;
+		@media #{$lg_device}{
+			max-width: 900px; 
+			border-radius:0; 
+		}
+		.btn__close,.btn__close_clild,.btn__close_inner_popup{
+			background-color:transparent;
+			border-color:transparent;
+			position: absolute;
+			right: 24px; 
+			top: 54px;
+			z-index: 10;
+			@media #{$lg_device}{
+				top: 16px;
+				right: 16px; 
+			}
+		}
+		.icon{
+		    position: absolute;
+		    left: -25px;
+		    top: 43px;
+		    display: block;
+		    @media #{$lg_device}{
+				left: 10px;
+				top: 32px;
+		    }
+		}
+		.popup-title{
+			padding-left: 50px;
+			padding-bottom: 20px; 
+			@media #{$lg_device}{
+				padding-left: 49px; 
+				padding-bottom: 15px;
+			}
+		}
+	}
+	.body-content{
+		padding-top: 55px;
+		@media #{$lg_device}{
+			padding-top: 45px;
+		} 
+		.links-card.position-abs{
+			@media #{$min_lg}{
+				right: -65px;
+				top: 157px; 
+				position: absolute;
+
+			}
+			@media #{$lg_device}{
+				margin-left: 0;
+				margin-right: 0; 
+			}
+		}
+	}
+}
+.text-links-wrap{
+	li{
+		margin-bottom: 18px; 
+	}
+	a{
+		font-size: 24px;
+		line-height: 21px; 
+		color: #3A4A27;
+		text-decoration: underline; 
+	}
+}
+.inner-content-popup{ 
+	padding-top: 86px;
+	@media #{$lg_device}{
+		padding-left: 0;
+		padding-right: 0; 
+		padding-top: 0; 
+	}
+	.popup-wrapper{
+		background-color:#A0A0A0; 
+		max-width: 1500px; 
+		color: #fff; 
+		.popup-title{
+			font-size: 90px;
+			padding: 0;
+			margin-bottom: 15px; 
+			@media #{$lg_device}{
+				font-size: 53px;
+				line-height: 53px;
+
+			}
+		}
+	}
+}
+.team-card{
+	text-align: center;
+	.thumb{
+		border-radius:23px; 
+		display: block;margin-left: auto;
+		margin-right: auto;
+	}
+	.card-title{
+		font-size: 25px;
+		margin-bottom: 20px; 
+		margin-top:30px;
+	}
+	.info{
+		font-size: 16px;
+	}
+}
+@media #{$min_lg}{
+	.col-5-row{
+		.col-lg-2{
+			width: 20%; 
+		}
+	}
+}
